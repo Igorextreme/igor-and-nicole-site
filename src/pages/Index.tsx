@@ -6,29 +6,39 @@ import { Button } from "@/components/ui/button";
 const Index = () => {
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
-      <div className="py-20 md:py-32 bg-gradient-to-b from-white to-wedding-pink/10">
-        <div className="wedding-container text-center">
-          <h1 className="font-dancing text-5xl md:text-7xl text-wedding-green mb-4 animate-fade-in">
-            Igor & Nicole
-          </h1>
-          <p className="text-xl md:text-2xl text-gray-700 mb-8 animate-fade-in">
-            Estamos nos casando!
-          </p>
-          <div className="w-24 h-1 bg-wedding-gold mx-auto mb-8"></div>
-          <p className="text-xl md:text-2xl text-gray-700 mb-12 animate-fade-in">
-            18 de Julho de 2025
-          </p>
-          <div className="flex flex-col md:flex-row gap-4 justify-center animate-fade-in">
-            <Link to="/rsvp">
-              <Button className="wedding-button">Confirme sua presença</Button>
-            </Link>
-            <Link to="/gifts">
-              <Button className="wedding-button">Presentes</Button>
-            </Link>
-            <Link to="/guidelines">
-              <Button className="wedding-button">Manual do Convidado</Button>
-            </Link>
+      {/* Hero Section with Couple's Photo Background */}
+      <div 
+        className="py-20 md:py-32 bg-cover bg-center relative"
+        style={{ 
+          backgroundImage: 'url("/lovable-uploads/2c098c29-c0d3-4764-834a-b49d1792d25e.png")',
+        }}
+      >
+        {/* Overlay to darken the image and make text more readable */}
+        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+        
+        <div className="wedding-container text-center relative z-10">
+          <div className="max-w-xl mx-auto bg-white bg-opacity-90 rounded-lg p-8 shadow-lg">
+            <h1 className="font-dancing text-5xl md:text-7xl text-wedding-green mb-4 animate-fade-in">
+              Igor & Nicole
+            </h1>
+            <p className="text-xl md:text-2xl text-gray-700 mb-8 animate-fade-in">
+              Estamos nos casando!
+            </p>
+            <div className="w-24 h-1 bg-wedding-gold mx-auto mb-8"></div>
+            <p className="text-xl md:text-2xl text-gray-700 mb-12 animate-fade-in">
+              18 de Julho de 2025
+            </p>
+            <div className="flex flex-col md:flex-row gap-4 justify-center animate-fade-in">
+              <Link to="/rsvp">
+                <Button className="wedding-button">Confirme sua presença</Button>
+              </Link>
+              <Link to="/gifts">
+                <Button className="wedding-button">Presentes</Button>
+              </Link>
+              <Link to="/guidelines">
+                <Button className="wedding-button">Manual do Convidado</Button>
+              </Link>
+            </div>
           </div>
         </div>
       </div>

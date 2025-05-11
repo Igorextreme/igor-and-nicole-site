@@ -20,8 +20,15 @@ const Navbar = () => {
   return (
     <nav className="bg-white shadow-md py-4">
       <div className="wedding-container flex justify-between items-center">
-        <Link to="/" className="font-dancing text-2xl font-bold text-wedding-green">
-          Igor & Nicole
+        <Link to="/" className="flex items-center gap-2">
+          <img 
+            src="/lovable-uploads/9e5adae7-b59c-44be-a9a7-d77b0f35c856.png" 
+            alt="Logo Igor & Nicole" 
+            className="h-12 w-auto"
+          />
+          <span className="font-dancing text-2xl font-bold text-wedding-green">
+            Igor & Nicole
+          </span>
         </Link>
 
         {/* Mobile menu button */}
