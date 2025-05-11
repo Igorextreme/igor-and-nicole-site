@@ -18,6 +18,15 @@ const Index = () => {
         
         <div className="wedding-container text-center relative z-10">
           <div className="max-w-xl mx-auto bg-white bg-opacity-90 rounded-lg p-8 shadow-lg">
+            {/* Logo circulada com borda dourada */}
+            <div className="mx-auto mb-6 w-28 h-28 rounded-full border-4 border-wedding-gold flex items-center justify-center p-1 bg-white shadow-md">
+              <img 
+                src="/lovable-uploads/9e5adae7-b59c-44be-a9a7-d77b0f35c856.png" 
+                alt="Logo Igor & Nicole" 
+                className="h-20 w-auto rounded-full"
+              />
+            </div>
+            
             <h1 className="font-dancing text-5xl md:text-7xl text-wedding-green mb-4 animate-fade-in">
               Igor & Nicole
             </h1>
