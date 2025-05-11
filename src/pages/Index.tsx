@@ -53,17 +53,22 @@ const Index = () => {
       <div className="py-16 bg-gray-50">
         <div className="wedding-container">
           <h2 className="section-title">Esquema de Cores</h2>
-          <div className="max-w-3xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="bg-white p-6 rounded-lg shadow-md text-center">
-                <div className="w-24 h-24 rounded-full bg-wedding-pink mx-auto mb-4"></div>
-                <h3 className="font-dancing text-2xl text-wedding-green mb-2">Rosa</h3>
+                <div className="w-24 h-24 rounded-full bg-wedding-green mx-auto mb-4"></div>
+                <h3 className="font-dancing text-2xl text-wedding-green mb-2">Verde</h3>
                 <p className="text-gray-700">é a cor das madrinhas</p>
+              </div>
+              <div className="bg-white p-6 rounded-lg shadow-md text-center">
+                <div className="w-24 h-24 rounded-full bg-blue-400 mx-auto mb-4"></div>
+                <h3 className="font-dancing text-2xl text-wedding-green mb-2">Azul</h3>
+                <p className="text-gray-700">é a cor das demoiselles</p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md text-center">
                 <div className="w-24 h-24 rounded-full bg-white border-2 border-gray-200 mx-auto mb-4"></div>
                 <h3 className="font-dancing text-2xl text-wedding-green mb-2">Branco</h3>
-                <p className="text-gray-700">é a cor da noiva</p>
+                <p className="text-gray-700">é a cor dos noivos</p>
               </div>
             </div>
           </div>
