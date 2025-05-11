@@ -7,10 +7,10 @@ const Navbar = () => {
   const location = useLocation();
 
   const navLinks = [
-    { name: "Home", path: "/" },
-    { name: "RSVP", path: "/rsvp" },
-    { name: "Gift Registry", path: "/gifts" },
-    { name: "Guest Guidelines", path: "/guidelines" },
+    { name: "Início", path: "/" },
+    { name: "Confirmar Presença", path: "/rsvp" },
+    { name: "Lista de Presentes", path: "/gifts" },
+    { name: "Manual do Convidado", path: "/guidelines" },
   ];
 
   const toggleMenu = () => {
